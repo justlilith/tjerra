@@ -1,0 +1,370 @@
+[
+  { "index": 0,
+    "name":"The Fool",
+    "description":""
+  },
+  { "index": 1,
+    "name":"The Magician",
+    "description":""
+  },
+  { "index": 2,
+    "name":"The High Priestess",
+    "description":""
+  },
+  { "index": 3,
+    "name":"The Empress",
+    "description":""
+  },
+  { "index": 4,
+    "name":"The Emperor",
+    "description":""
+  },
+  { "index": 5,
+    "name":"The Hierophant",
+    "description":""
+  },
+  { "index": 6,
+    "name":"The Lovers",
+    "description":""
+  },
+  { "index": 7,
+    "name":"The Chariot",
+    "description":""
+  },
+  { "index": 8,
+    "name":"Strength",
+    "description":""
+  },
+  { "index": 9,
+    "name":"The Hermit",
+    "description":""
+  },
+  { "index": 10,
+    "name":"Wheel of Fortune",
+    "description":""
+  },
+  { "index": 11,
+    "name":"Justice",
+    "description":""
+  },
+  { "index": 12,
+    "name":"The Hanged Man",
+    "description":""
+  },
+  { "index": 13,
+    "name":"Death",
+    "description":""
+  },
+  { "index": 14,
+    "name":"Temperance",
+    "description":""
+  },
+  { "index": 15,
+    "name":"The Devil",
+    "description":""
+  },
+  { "index": 16,
+    "name":"The Tower",
+    "description":""
+  },
+  { "index": 17,
+    "name":"The Star",
+    "description":""
+  },
+  { "index": 18,
+    "name":"The Moon",
+    "description":""
+  },
+  { "index": 19,
+    "name":"The Sun",
+    "description":""
+  },
+  { "index": 20,
+    "name":"Judgment",
+    "description":""
+  },
+  { "index": 21,
+    "name":"The World",
+    "description":""
+  },
+  {
+    "index": 22,
+    "name": "Ace of Wands",
+    "description":""
+  },
+  {
+    "index": 23,
+    "name": "Two of Wands",
+    "description":""
+  },
+  {
+    "index": 24,
+    "name": "Three of Wands",
+    "description":""
+  },
+  {
+    "index": 25,
+    "name": "Four of Wands",
+    "description":""
+  },
+  {
+    "index": 26,
+    "name": "Five of Wands",
+    "description":""
+  },
+  {
+    "index": 27,
+    "name": "Six of Wands",
+    "description":""
+  },
+  {
+    "index": 28,
+    "name": "Seven of Wands",
+    "description":""
+  },
+  {
+    "index": 29,
+    "name": "Eight of Wands",
+    "description":""
+  },
+  {
+    "index": 30,
+    "name": "Nine of Wands",
+    "description":""
+  },
+  {
+    "index": 31,
+    "name": "Ten of Wands",
+    "description":""
+  },
+  {
+    "index": 32,
+    "name": "Page of Wands",
+    "description":""
+  },
+  {
+    "index": 33,
+    "name": "Knight of Wands",
+    "description":""
+  },
+  {
+    "index": 34,
+    "name": "Queen of Wands",
+    "description":""
+  },
+  {
+    "index": 35,
+    "name": "King of Wands",
+    "description":""
+  },
+  {
+    "index": 36,
+    "name": "Ace of Cups",
+    "description":""
+  },
+  {
+    "index": 37,
+    "name": "Two of Cups",
+    "description":""
+  },
+  {
+    "index": 38,
+    "name": "Three of Cups",
+    "description":""
+  },
+  {
+    "index": 39,
+    "name": "Four of Cups",
+    "description":""
+  },
+  {
+    "index": 40,
+    "name": "Five of Cups",
+    "description":""
+  },
+  {
+    "index": 41,
+    "name": "Six of Cups",
+    "description":""
+  },
+  {
+    "index": 42,
+    "name": "Seven of Cups",
+    "description":""
+  },
+  {
+    "index": 43,
+    "name": "Eight of Cups",
+    "description":""
+  },
+  {
+    "index": 44,
+    "name": "Nine of Cups",
+    "description":""
+  },
+  {
+    "index": 45,
+    "name": "Ten of Cups",
+    "description":""
+  },
+  {
+    "index": 46,
+    "name": "Page of Cups",
+    "description":""
+  },
+  {
+    "index": 47,
+    "name": "Knight of Cups",
+    "description":""
+  },
+  {
+    "index": 48,
+    "name": "Queen of Cups",
+    "description":""
+  },
+  {
+    "index": 49,
+    "name": "King of Cups",
+    "description":""
+  },
+  {
+    "index": 50,
+    "name": "Ace of Swords",
+    "description":""
+  },
+  {
+    "index": 51,
+    "name": "Two of Swords",
+    "description":""
+  },
+  {
+    "index": 52,
+    "name": "Three of Swords",
+    "description":""
+  },
+  {
+    "index": 53,
+    "name": "Four of Swords",
+    "description":""
+  },
+  {
+    "index": 54,
+    "name": "Five of Swords",
+    "description":""
+  },
+  {
+    "index": 55,
+    "name": "Six of Swords",
+    "description":""
+  },
+  {
+    "index": 56,
+    "name": "Seven of Swords",
+    "description":""
+  },
+  {
+    "index": 57,
+    "name": "Eight of Swords",
+    "description":""
+  },
+  {
+    "index": 58,
+    "name": "Nine of Swords",
+    "description":""
+  },
+  {
+    "index": 59,
+    "name": "Ten of Swords",
+    "description":""
+  },
+  {
+    "index": 60,
+    "name": "Page of Swords",
+    "description":""
+  },
+  {
+    "index": 61,
+    "name": "Knight of Swords",
+    "description":""
+  },
+  {
+    "index": 62,
+    "name": "Queen of Swords",
+    "description":""
+  },
+  {
+    "index": 63,
+    "name": "King of Swords",
+    "description":""
+  },
+  {
+    "index": 64,
+    "name": "Ace of Pentacles",
+    "description":""
+  },
+  {
+    "index": 65,
+    "name": "Two of Pentacles",
+    "description":""
+  },
+  {
+    "index": 66,
+    "name": "Three of Pentacles",
+    "description":""
+  },
+  {
+    "index": 67,
+    "name": "Four of Pentacles",
+    "description":""
+  },
+  {
+    "index": 68,
+    "name": "Five of Pentacles",
+    "description":""
+  },
+  {
+    "index": 69,
+    "name": "Six of Pentacles",
+    "description":""
+  },
+  {
+    "index": 70,
+    "name": "Seven of Pentacles",
+    "description":""
+  },
+  {
+    "index": 71,
+    "name": "Eight of Pentacles",
+    "description":""
+  },
+  {
+    "index": 72,
+    "name": "Nine of Pentacles",
+    "description":""
+  },
+  {
+    "index": 73,
+    "name": "Ten of Pentacles",
+    "description":""
+  },
+  {
+    "index": 74,
+    "name": "Page of Pentacles",
+    "description":""
+  },
+  {
+    "index": 75,
+    "name": "Knight of Pentacles",
+    "description":""
+  },
+  {
+    "index": 76,
+    "name": "Queen of Pentacles",
+    "description":""
+  },
+  {
+    "index": 77,
+    "name": "King of Pentacles",
+    "description":""
+  }
+]
