@@ -1,36 +1,58 @@
-function shuffle(deck:CardT[]):CardT[] {
-  // return deck
-  const shuffle2 = (deck:CardT[]):CardT[] => {
-    deck = deck.map((value, index) =>{
-      if (Math.random() >= .3) {
-        const card = deck.splice(index,1)
-        // const half = deck.splice(Math.floor(deck.length / 2))
-        deck.push(card[0])
-        // deck = deck.concat(half[0])
-        return deck[index]
-        // return deck[index]
-      } else {
-        const card = deck.pop()
-        deck.push(deck[index])
-        deck[index] = card
-        return deck[index]
-      }
-    })
-    return deck
+function discard(deck:CardT[], discardCount?:number):CardT[] {
+  if (!discardCount) {
+    return deck.slice(1)
+  }
+  discardCount = Math.min(discardCount, deck.length)
+  return deck.slice(discardCount)
+}
+
+
+function draw(deck:CardT[], drawCount?:number):CardT[] {
+  if (!drawCount || drawCount === 1) {
+    return [deck[0]]
   }
 
-  if (deck.length == 1) {
-    return deck
+  const returnDeck = []
+  drawCount = Math.min(drawCount, deck.length)
+  
+  for (let n = 0; n < drawCount; n++) {
+    returnDeck.push(deck[n])
   }
-  else {
-    deck = shuffle2(deck)
-    deck = shuffle2(deck)
-    deck = shuffle2(deck)
-    deck = shuffle2(deck)
-    return shuffle2(deck)
+  
+  return returnDeck
+}
+
+
+  async function shuffle(deck:CardT[]):Promise<CardT[]> {
+  const check = (array1, array2, index) => {
+    if (array2.includes(array1[index])) {
+      return check(array1, array2, (index + 1) % array1.length)
+    } else {
+      return index
+    }
   }
+
+  return new Promise((resolve) => {
+    if (deck.length == 1) {
+      resolve(deck)
+    }
+    else {
+      deck = JSON.parse(JSON.stringify(deck))
+      const newDeck = []
+
+      deck.forEach(() => {
+        const factor = Math.random()
+        const newIndex = check(deck, newDeck, Math.floor(deck.length * factor))
+        newDeck.push(deck[newIndex])
+      })
+      // return deck
+      resolve(newDeck)
+    }
+  })
 }
 
 export {
-  shuffle
+  draw
+  , discard
+  , shuffle
 }

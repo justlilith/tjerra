@@ -11,6 +11,12 @@ export const routes = [
 	// src/routes/index.svelte
 	[/^\/$/, [c[0], c[2]], [c[1]]],
 
+	// src/routes/endpoints/cards.json.js.map
+	[/^\/endpoints\/cards\.json\.js$/],
+
+	// src/routes/endpoints/cards.json.js
+	[/^\/endpoints\/cards\.json$/],
+
 	// src/routes/endpoints/cards.json.ts
 	[/^\/endpoints\/cards\.json$/],
 
