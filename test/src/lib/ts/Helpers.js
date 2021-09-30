@@ -1,3 +1,8 @@
+function append(args) {
+    const deck = JSON.parse(JSON.stringify(args.deck));
+    deck.push(args.vals);
+    return deck.flat(1);
+}
 function discard(deck, discardCount) {
     if (!discardCount) {
         return deck.slice(1);
@@ -42,5 +47,5 @@ async function shuffle(deck) {
         }
     });
 }
-export { draw, discard, shuffle };
+export { append, draw, discard, shuffle };
 //# sourceMappingURL=Helpers.js.map

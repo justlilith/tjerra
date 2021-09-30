@@ -1,3 +1,15 @@
+interface appendArgs {
+  deck:CardT[]
+  , vals: CardT | CardT[]
+}
+
+function append(args:appendArgs):CardT[] {
+  const deck = JSON.parse(JSON.stringify(args.deck))
+  deck.push(args.vals)
+  return deck.flat(1)
+}
+
+
 function discard(deck:CardT[], discardCount?:number):CardT[] {
   if (!discardCount) {
     return deck.slice(1)
@@ -7,9 +19,11 @@ function discard(deck:CardT[], discardCount?:number):CardT[] {
 }
 
 
-function draw(deck:CardT[], drawCount?:number):CardT[] {
+function draw(deck:CardT[], drawCount?:number):[CardT[], CardT[]] {
   if (!drawCount || drawCount === 1) {
-    return [deck[0]]
+    const returnDeck = [deck[0]]
+    deck.shift()
+    return [deck, returnDeck]
   }
 
   const returnDeck = []
@@ -17,9 +31,10 @@ function draw(deck:CardT[], drawCount?:number):CardT[] {
   
   for (let n = 0; n < drawCount; n++) {
     returnDeck.push(deck[n])
+    deck.shift()
   }
   
-  return returnDeck
+  return [deck, returnDeck]
 }
 
 
@@ -52,7 +67,8 @@ function draw(deck:CardT[], drawCount?:number):CardT[] {
 }
 
 export {
-  draw
+  append
+  , draw
   , discard
   , shuffle
 }

@@ -31,8 +31,15 @@ test(`should draw`, async (t) => {
 })
 
 test(`should discard`, async (t) => {
+  let miniDeck = [1, 2, 3, 4, 5]
+  t.eq(Helpers.discard(miniDeck), [2, 3, 4, 5])
+  t.eq(Helpers.discard(miniDeck, 3), [4, 5])
+  t.eq(Helpers.discard(miniDeck, 666), [])
+})
+
+test(`should append`, async (t) => {
   let miniDeck = [1,2,3,4,5]
-  t.eq(Helpers.discard(miniDeck), [2,3,4,5])
-  t.eq(Helpers.discard(miniDeck,3), [4,5])
-  t.eq(Helpers.discard(miniDeck,666), [])
+  t.eq(Helpers.append({deck: miniDeck, vals: 6}), [1, 2, 3, 4, 5, 6])
+  t.eq(Helpers.append({deck: miniDeck, vals: [6]}), [1, 2, 3, 4, 5, 6])
+  t.eq(Helpers.append({deck: miniDeck, vals: [1, 2]}), [1, 2, 3, 4, 5, 1, 2])
 })
