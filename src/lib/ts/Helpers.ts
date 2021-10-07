@@ -1,8 +1,3 @@
-interface appendArgs {
-  deck:CardT[]
-  , vals: CardT | CardT[]
-}
-
 function append(args:appendArgs):CardT[] {
   const deck = JSON.parse(JSON.stringify(args.deck))
   deck.push(args.vals)
@@ -25,7 +20,7 @@ function draw(deck:CardT[], drawCount?:number):[CardT[], CardT[]] {
     deck.shift()
     return [deck, returnDeck]
   }
-
+  
   const returnDeck = []
   drawCount = Math.min(drawCount, deck.length)
   
@@ -38,7 +33,15 @@ function draw(deck:CardT[], drawCount?:number):[CardT[], CardT[]] {
 }
 
 
-  async function shuffle(deck:CardT[]):Promise<CardT[]> {
+function prepend(args:appendArgs):CardT[] {
+  const deck = JSON.parse(JSON.stringify(args.deck))
+  args.deck.unshift(args.vals[0])
+  deck.unshift(args.vals)
+  return deck.flat(1)
+}
+
+
+async function shuffle(deck:CardT[]):Promise<CardT[]> {
   const check = (array1, array2, index) => {
     if (array2.includes(array1[index])) {
       return check(array1, array2, (index + 1) % array1.length)
@@ -70,5 +73,6 @@ export {
   append
   , draw
   , discard
+  , prepend
   , shuffle
 }

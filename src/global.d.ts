@@ -5,3 +5,8 @@ interface CardT {
   index: number
   name: string
 }
+
+interface appendArgs {
+  deck:CardT[]
+  , vals: CardT | CardT[]
+}
